@@ -1,25 +1,27 @@
-This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block).
+=== Blkcanvas - Easy Attachments ===
+Contributors: Henzly Meghie
+Tags: images, attachments, upload, media, media library
+Donate link: https://blk-canvas.com/
+Requires at least: 5.2.4
+Tested up to: 5.3
+Stable tag: 1.0
+License: GPL2+
+License URI: https://www.gnu.org/licenses/gpl-2.0.txt
 
-Below you will find some information on how to run scripts.
+Download beautiful photos right your post editor without the hassle or pay.
 
->You can find the most recent version of this guide [here](https://github.com/ahmadawais/create-guten-block).
+== Description ==
+This tool integrates seamlessly with your WordPress backend, lets you create posts with high-quality FREE photos – without ever leaving your WordPress site. It allows users to save time and by uploading images directly inside their post and media library and for developers who want to prototype using real-world imagery.
 
-## 👉  `npm start`
-- Use to compile and run the block in development mode.
-- Watches for any changes and reports back any errors in your code.
+== Installation ==
+### Installing through Wordpress
+1. Navigate to the ‘Add New’ in the plugins dashboard
+2. Search for ‘Easy Attachments’
+3. Click ‘Install Now’
+4. Activate the plugin on the Plugin dashboard
 
-## 👉  `npm run build`
-- Use to build production code for your block inside `dist` folder.
-- Runs once and reports back the gzip file sizes of the produced code.
+== Screenshots ==
+1. Gutenberg Page/Post edit add image as featured image, insert into post or download into media library
 
-## 👉  `npm run eject`
-- Use to eject your plugin out of `create-guten-block`.
-- Provides all the configurations so you can customize the project as you want.
-- It's a one-way street, `eject` and you have to maintain everything yourself.
-- You don't normally have to `eject` a project because by ejecting you lose the connection with `create-guten-block` and from there onwards you have to update and maintain all the dependencies on your own.
-
----
-
-###### Feel free to tweet and say 👋 at me [@MrAhmadAwais](https://twitter.com/mrahmadawais/)
-
-[![npm](https://img.shields.io/npm/v/create-guten-block.svg?style=flat-square)](https://www.npmjs.com/package/create-guten-block) [![npm](https://img.shields.io/npm/dt/create-guten-block.svg?style=flat-square&label=downloads)](https://www.npmjs.com/package/create-guten-block)  [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/ahmadawais/create-guten-block) [![Tweet for help](https://img.shields.io/twitter/follow/mrahmadawais.svg?style=social&label=Tweet%20@MrAhmadAwais)](https://twitter.com/mrahmadawais/) [![GitHub stars](https://img.shields.io/github/stars/ahmadawais/create-guten-block.svg?style=social&label=Stars)](https://github.com/ahmadawais/create-guten-block/stargazers) [![GitHub followers](https://img.shields.io/github/followers/ahmadawais.svg?style=social&label=Follow)](https://github.com/ahmadawais?tab=followers)
+== Changelog ==
+- Initial Commit
