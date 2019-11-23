@@ -1,0 +1,319 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+.easy-attachments-sidebar_search-container {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  .easy-attachments-sidebar_search-container button {
+    padding: 6px 8px;
+    margin-bottom: 8px;
+    border-radius: 0; }
+  .easy-attachments-sidebar_search-container .search-icon-container {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-53%);
+        -ms-transform: translateY(-53%);
+            transform: translateY(-53%);
+    right: 10px;
+    max-width: 16px; }
+    .easy-attachments-sidebar_search-container .search-icon-container .search-button svg {
+      height: 15px;
+      cursor: pointer; }
+  .easy-attachments-sidebar_search-container img#search-icon {
+    height: 100%;
+    width: 100%;
+    cursor: pointer; }
+  .easy-attachments-sidebar_search-container .easy-attachments-search_input {
+    width: 100%; }
+
+.easy-attachments-sidebar .easy-attachments-sidebar_search-container {
+  margin: 0 16px 16px; }
+
+.easy-attachments-sidebar .easy-attachments-sidebar_quicksearch {
+  position: relative;
+  padding: 16px 16px 0;
+  width: 100%;
+  height: 100px;
+  overflow: hidden; }
+  .easy-attachments-sidebar .easy-attachments-sidebar_quicksearch::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 100px;
+    height: 100%;
+    pointer-events: none;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(255, 255, 255, 0)), color-stop(95%, #fff), to(#fff));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, #fff 95%, #fff);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0, #fff 95%, #fff);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, #fff 95%, #fff); }
+  .easy-attachments-sidebar .easy-attachments-sidebar_quicksearch .easy-attachments-sidebar_quicksearch_list_container {
+    position: relative;
+    height: calc(100% + 15px);
+    margin: 16px -16px 0 -16px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    overflow-x: scroll;
+    overflow-y: hidden; }
+  .easy-attachments-sidebar .easy-attachments-sidebar_quicksearch p {
+    font-weight: 600;
+    color: #191e23;
+    margin: 0; }
+  .easy-attachments-sidebar .easy-attachments-sidebar_quicksearch ul {
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-left: 16px; }
+    .easy-attachments-sidebar .easy-attachments-sidebar_quicksearch ul li {
+      position: relative;
+      color: #666d75;
+      margin-left: -5px;
+      margin-right: 5px;
+      padding: 5px 7px;
+      border: 1px solid transparent;
+      -webkit-transform: translateY(1px);
+          -ms-transform: translateY(1px);
+              transform: translateY(1px);
+      display: block;
+      line-height: 1;
+      font-size: 14px;
+      white-space: nowrap;
+      border-radius: 3px;
+      -webkit-transition: all ease-in 0.1s;
+      -o-transition: all ease-in 0.1s;
+      transition: all ease-in 0.1s;
+      cursor: pointer; }
+      .easy-attachments-sidebar .easy-attachments-sidebar_quicksearch ul li.selected {
+        color: #006a95;
+        border: 1px solid #006a95;
+        text-decoration: none;
+        -webkit-transition: all ease-in 0.1s;
+        -o-transition: all ease-in 0.1s;
+        transition: all ease-in 0.1s; }
+      .easy-attachments-sidebar .easy-attachments-sidebar_quicksearch ul li:hover:not(.selected) {
+        background-color: #fff;
+        color: #191e23;
+        text-shadow: none;
+        -webkit-transition: all ease-in 0.1s;
+        -o-transition: all ease-in 0.1s;
+        transition: all ease-in 0.1s; }
+
+.easy-attachments-sidebar .easy-attachments-sidebar_photos {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-sidebar_photo_container {
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
+    max-width: 100%;
+    overflow: hidden; }
+    .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-sidebar_photo_container > img {
+      position: relative;
+      z-index: 5; }
+    .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-sidebar_photo_container .easy-attachments-download_container_overlay {
+      display: none;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(25, 30, 35, 0.7);
+      color: #fff;
+      z-index: 10; }
+      .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-sidebar_photo_container .easy-attachments-download_container_overlay > span {
+        margin-bottom: 7px; }
+    .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-sidebar_photo_container .linePreloader {
+      width: 150px;
+      height: 2px;
+      background: -webkit-gradient(linear, left top, right top, from(#fff), to(#fff));
+      background: -webkit-linear-gradient(left, #fff, #fff);
+      background: -o-linear-gradient(left, #fff, #fff);
+      background: linear-gradient(to right, #fff, #fff);
+      background-color: #000;
+      border-radius: 4px;
+      background-size: 20%;
+      background-repeat: repeat-y;
+      background-position: -25% 0;
+      -webkit-animation: scroll 1.75s ease-in-out infinite;
+              animation: scroll 1.75s ease-in-out infinite; }
+    .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-sidebar_photo_container.downloading .easy-attachments-download_container_overlay {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+    .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-sidebar_photo_container.downloaded .easy-attachments-download_container_overlay {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-sidebar_photo_container.downloaded .easy-attachments-download_container_overlay > span {
+        margin-bottom: 7px; }
+    .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-sidebar_photo_container.downloaded .linePreloader {
+      -webkit-animation: load 2s linear;
+              animation: load 2s linear;
+      background-size: 100%;
+      background-position: center;
+      background: #00c851; }
+
+@-webkit-keyframes scroll {
+  50% {
+    background-size: 80%; }
+  100% {
+    background-position: 125% 0; } }
+
+@keyframes scroll {
+  50% {
+    background-size: 80%; }
+  100% {
+    background-position: 125% 0; } }
+
+@-webkit-keyframes load {
+  0% {
+    background-size: 0%;
+    background-position: 0 0; }
+  50% {
+    background-size: 50%; }
+  100% {
+    background-size: 100%; } }
+
+@keyframes load {
+  0% {
+    background-size: 0%;
+    background-position: 0 0; }
+  50% {
+    background-size: 50%; }
+  100% {
+    background-size: 100%; } }
+  .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-sidebar_photo_user {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-align: center;
+        align-items: center;
+    color: #fff;
+    padding: 5px;
+    z-index: 10; }
+    .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-sidebar_photo_user img {
+      max-width: 32px;
+      border-radius: 50px;
+      margin-right: 7px; }
+    .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-sidebar_photo_user span {
+      text-shadow: 1px 1px 2px black; }
+  .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-sidebar_loadmore.active {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2); }
+  .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0%;
+    padding-left: 5px;
+    -webkit-transition: all ease 0.1s;
+    -o-transition: all ease 0.1s;
+    transition: all ease 0.1s;
+    z-index: 6; }
+    .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container * {
+      -webkit-transition: all ease 0.1s;
+      -o-transition: all ease 0.1s;
+      transition: all ease 0.1s; }
+    .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container button {
+      display: block;
+      background-color: transparent;
+      color: #eee;
+      border: none;
+      margin-bottom: 10px;
+      outline: none; }
+      .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container button:hover {
+        -webkit-transform: scale(1.15);
+            -ms-transform: scale(1.15);
+                transform: scale(1.15);
+        cursor: pointer; }
+      .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container button svg {
+        height: 15px; }
+        .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container button svg * {
+          fill: #fff; }
+    .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container .easy-attachments-download_button_container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      position: relative;
+      height: 50px;
+      width: 150px;
+      text-align: center;
+      background-color: transparent;
+      z-index: 6; }
+      .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container .easy-attachments-download_button_container.active {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: auto;
+        width: auto;
+        background-color: #181b1b; }
+        .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container .easy-attachments-download_button_container.active .easy-attachments-download {
+          display: none; }
+        .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container .easy-attachments-download_button_container.active .download_intopost,
+        .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container .easy-attachments-download_button_container.active .download_featured {
+          display: block;
+          -webkit-transform: translateY(0px);
+              -ms-transform: translateY(0px);
+                  transform: translateY(0px);
+          opacity: 1; }
+          .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container .easy-attachments-download_button_container.active .download_intopost svg,
+          .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container .easy-attachments-download_button_container.active .download_featured svg {
+            height: 15px; }
+            .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container .easy-attachments-download_button_container.active .download_intopost svg *,
+            .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container .easy-attachments-download_button_container.active .download_featured svg * {
+              fill: #fff; }
+        .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container .easy-attachments-download_button_container.active .download_intopost {
+          margin-right: 10px; }
+      .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container .easy-attachments-download_button_container:hover button {
+        -webkit-transform: translateY(0px);
+            -ms-transform: translateY(0px);
+                transform: translateY(0px);
+        opacity: 1; }
+      .easy-attachments-sidebar .easy-attachments-sidebar_photos .easy-attachments-download_container .easy-attachments-download_button_container:hover + .easy-attachments-download_container_overlay {
+        opacity: 1; }
+
+.easy-attachments-sidebar .easy-attachments-sidebar_loadmore {
+  text-align: center;
+  padding: 25px; }
